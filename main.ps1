@@ -1,6 +1,6 @@
 . ".\variables.ps1"
+. ".\show-menu.ps1"
 
 $servers = Import-Csv "$inventario" -Delimiter ","
-$servers | ForEach-Object {
-    Write-Host "$($_.dn)"
-}
+$server = Show-Menu($servers)
+write-host $server
