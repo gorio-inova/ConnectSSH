@@ -2,8 +2,8 @@
 function Connect-SSH {
     [CmdletBinding()]
     param (
-        [PSDefaultValue(Help = ".\inventario.csv")]
-        [string]$inventario = ".\inventario.csv" 
+        [PSDefaultValue(Help = "HOME\Documents\inventario.csv")]
+        [string]$inventario = "$($HOME)\Documents\inventario.csv" 
     )
 
     $servers = Import-Csv -Path $Inventario -Delimiter "," 
