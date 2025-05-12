@@ -1,1 +1,1 @@
-$inventario=".\inventario.json"
+$inventario=".\inventario.csv"
