@@ -51,4 +51,7 @@ function Show-Menu {
         $selectedDn = $listBox.SelectedItem
         return $dnToServerMap[$selectedDn]
     }
+    else{
+        return $false
+    }
 }
