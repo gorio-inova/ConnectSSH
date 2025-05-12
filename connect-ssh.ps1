@@ -9,6 +9,6 @@ function Connect-SSH {
         ssh.exe -i $server.key "$($server.user)@$($server.host)"
     }
     else{
-        Write-Host "uwu"
+        ssh.exe "$($server.user)@$($server.host)"
     }
 }
