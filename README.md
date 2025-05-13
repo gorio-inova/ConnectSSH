@@ -21,6 +21,9 @@ Debes generar un inventario en csv siguiendo el siguiente esquema:
 |:--------------------------:	|:---------------:	|:--------------------:	|:-------------------:	|
 | nombre que quieras mostrar 	| ip o nombre dns 	| usuario para iniciar 	| ruta a la clave-ssh 	|
 
+>[!Important]
+> La ruta por defecto para el inventario es `%HOMEDRIVE%%HOMEPATH%\Documents\inventario.csv`. Si lo guardas en otra ruta, deberás pasarle al cmdlet la ruta en la que se encuentre.
+
 ### 2. Utiliza el CMDlet
 
 Simplemente usa `Connect-SSH` y selecciona la máquina
